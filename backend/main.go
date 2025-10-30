@@ -43,7 +43,7 @@ func main() {
 	users.RegisterRoutes(r, userHandler)
 
 	// Jalankan server pada port 8080
-	if err := r.Run(":8080"); err != nil {
+	if err := r.Run(":8100"); err != nil {
 		log.Fatalf("Gagal menjalankan server: %v", err)
 	}
 }
